@@ -1,40 +1,40 @@
 1.START
 
-2.DEFINE constant TV_PRICE = 400.00
-DEFINE constant MONITOR_PRICE = 220.00
-DEFINE constant FLASH_PRICE = 35.20
-DEFINE constant HDD_PRICE = 150.00
-DEFINE constant PRINTER_PRICE = 300.00
-DEFINE constant TAX_RATE = 0.0835
+2.DEFINE constant tv_price = 400.00
+DEFINE constant monitor_price = 220.00
+DEFINE constant flash_price = 35.20
+DEFINE constant hd_price = 150.00
+DEFINE constant printer_price = 300.00
+DEFINE constant tax_rate = 0.0835
 
 3. DECLARE integer variables:
-    qtyTV, qtyMonitor, qtyFlash, qtyHDD, qtyPrinter
+    qtytv, qtymonitor, qtyflash, qtyhdd, qtyprinter
 
 DECLARE float variables:
-    totalTV, totalMonitor, totalFlash, totalHDD, totalPrinter
+    totaltv, totalmonitor, totalflash, totalhd, totalprinter
     subtotal, tax, total
 
 4. PROMPT user: "How Many TVs Were Sold?"
-READ qtyTV
+READ qtytv
 PROMPT user: "How Many Monitors Were Sold?"
-READ qtyMonitor
+READ qtymonitor
 PROMPT user: "How Many Flash Drives Were Sold?"
-READ qtyFlash
+READ qtyflash
 PROMPT user: "How Many Hard Drives Were Sold?"
-READ qtyHDD
+READ qtyhd
 PROMPT user: "How Many Deskjet Printers Were Sold?"
-READ qtyPrinter
+READ qtyprinter
 
 5. CALCULATE:
-    totalTV = qtyTV × TV_PRICE
-    totalMonitor = qtyMonitor × MONITOR_PRICE
-    totalFlash = qtyFlash × FLASH_PRICE
-    totalHDD = qtyHDD × HDD_PRICE
-    totalPrinter = qtyPrinter × PRINTER_PRICE
+    totalTV = qtytv × tv_price
+    totalMonitor = qtymonitor × monitor_price
+    totalFlash = qtyflash × flash_price
+    totalHDD = qtyhd × hd_price
+    totalPrinter = qtyprinter × printer_price
 
-subtotal = totalTV + totalMonitor + totalFlash + totalHDD + totalPrinter
+subtotal = totaltv + totalmonitor + totalflash + totalhd + totalprinter
 
-tax = subtotal × TAX_RATE
+tax = subtotal × tax_rate
 
 total = subtotal + tax
 
