@@ -1,0 +1,48 @@
+1.START
+
+2.DEFINE constant TV_PRICE = 400.00
+DEFINE constant MONITOR_PRICE = 220.00
+DEFINE constant FLASH_PRICE = 35.20
+DEFINE constant HDD_PRICE = 150.00
+DEFINE constant PRINTER_PRICE = 300.00
+DEFINE constant TAX_RATE = 0.0835
+
+3. DECLARE integer variables:
+    qtyTV, qtyMonitor, qtyFlash, qtyHDD, qtyPrinter
+
+DECLARE float variables:
+    totalTV, totalMonitor, totalFlash, totalHDD, totalPrinter
+    subtotal, tax, total
+
+4. PROMPT user: "How Many TVs Were Sold?"
+READ qtyTV
+PROMPT user: "How Many Monitors Were Sold?"
+READ qtyMonitor
+PROMPT user: "How Many Flash Drives Were Sold?"
+READ qtyFlash
+PROMPT user: "How Many Hard Drives Were Sold?"
+READ qtyHDD
+PROMPT user: "How Many Deskjet Printers Were Sold?"
+READ qtyPrinter
+
+5. CALCULATE:
+    totalTV = qtyTV × TV_PRICE
+    totalMonitor = qtyMonitor × MONITOR_PRICE
+    totalFlash = qtyFlash × FLASH_PRICE
+    totalHDD = qtyHDD × HDD_PRICE
+    totalPrinter = qtyPrinter × PRINTER_PRICE
+
+subtotal = totalTV + totalMonitor + totalFlash + totalHDD + totalPrinter
+
+tax = subtotal × TAX_RATE
+
+total = subtotal + tax
+
+6. DISPLAY formatted bill:
+    QTY  DESCRIPTION  UNIT PRICE  TOTAL PRICE
+    Print each item line
+    Print Subtotal
+    Print Tax
+    Print Total
+
+END
