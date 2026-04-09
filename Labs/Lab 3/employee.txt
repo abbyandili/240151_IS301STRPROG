@@ -1,4 +1,3 @@
-
 Employee No. 	Department	Pay Rate	Exempt	Hours Worked 
 0101	41	8.11	Y	49
 0722	32	7.22	N	40
